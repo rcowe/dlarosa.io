@@ -1,23 +1,24 @@
 import logo from './logo.svg';
-import './App.css';
+import './styles.css';
+import { Route, Switch } from "react-router-dom";
+import { makeStyles } from "@material-ui/core/styles";
+import Header from './components/Header';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Home from './pages/Home';
+import Project from './pages/Projects';
+
+const useStyles = makeStyles({})
 
 function App() {
+  const classes = useStyles();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Switch>
+        <Route />
+      </Switch>
+
     </div>
   );
 }
