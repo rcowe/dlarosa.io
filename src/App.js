@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './styles.css';
 import { Route, Switch } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
@@ -13,13 +12,15 @@ const useStyles = makeStyles({})
 function App() {
   const classes = useStyles();
   return (
-    <div className="App">
+    <>
       <Header />
       <Switch>
-        <Route />
+          <Route exact from="/" component={props => <Home {...props} />} />
+          <Route exact path="/contact" component={props => <Contact {...props} />} />
+          <Route exact path="/about" component={props => <About {...props} />} />
+          <Route exact path="/projects" component={props => <Project {...props} />} />
       </Switch>
-
-    </div>
+    </>
   );
 }
 
