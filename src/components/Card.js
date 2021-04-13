@@ -46,7 +46,7 @@ export default function ImageCard({ place, checked }) {
                         component="h1"
                         className={classes.title}
                     >
-                        {place.title}
+                        <a href={place.link}> {place.title} </a>
                     </Typography>
                     <Typography
                         variant="body2"

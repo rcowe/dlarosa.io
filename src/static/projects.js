@@ -1,25 +1,28 @@
 const projects = [
     {
-        title: 'Bexpi',
+        title: 'Bexpi or Blvckisking',
         description:
             "A website to capture black history, globally and inclusive of truth. This site is intended to never be `finished`, instead it will continue to tell stories.",
         imageUrl: process.env.PUBLIC_URL + '/assets/Bexpi.jpg',
         time: 1500,
+        link: "https://blvckiskingwebv1.herokuapp.com/"
     },
     {
-        title: 'Nerdvana',
+        title: 'Todo App',
         description:
-            'A store for all things techy and nerdy. The goal is to connect people with their favorite characters and icons from pop culture. ',
-        imageUrl: process.env.PUBLIC_URL + '/assets/nerdvana.jpg',
+            'Simple to-do app with ability to add, complete and delete',
+        imageUrl: process.env.PUBLIC_URL + '/assets/todo.jpg',
         time: 1500,
+        link: "https://rosastodoapp.herokuapp.com/"
     },
     {
-        title: 'GOT Board Game',
+        title: 'Tweeter',
         description:
-            'Ten after the Burning of King\'s Landing. Queen Daenerys lived, she and King Ageon Targaryan (formerly Jon Snow) of Crown House Targaryan, now rule the six kingdoms.',
-        imageUrl: process.env.PUBLIC_URL + '/assets/got.jpg',
+            'Team Project replica of Tweeter ',
+        imageUrl: process.env.PUBLIC_URL + '/assets/tweeter.jpg',
         time: 1500,
-    }
+        link: "https://young-harbor-03363.herokuapp.com/"
+    },
 ];
 
 export default projects;
